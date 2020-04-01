@@ -1,0 +1,22 @@
+# this is an auto generated file. This will be overwritten
+subscription OnCreateProprietesMecaniques {
+  onCreateProprietesMecaniques {
+    name
+    moduleYoung
+    moduleCisaillement
+  }
+}
+subscription OnUpdateProprietesMecaniques {
+  onUpdateProprietesMecaniques {
+    name
+    moduleYoung
+    moduleCisaillement
+  }
+}
+subscription OnDeleteProprietesMecaniques {
+  onDeleteProprietesMecaniques {
+    name
+    moduleYoung
+    moduleCisaillement
+  }
+}

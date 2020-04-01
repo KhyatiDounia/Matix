@@ -1,0 +1,5 @@
+type ProprietesMecaniques @model {
+  name: ID!
+  moduleYoung: Float!
+  moduleCisaillement: Float!
+}
