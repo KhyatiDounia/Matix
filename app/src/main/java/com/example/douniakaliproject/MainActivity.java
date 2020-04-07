@@ -38,16 +38,32 @@ public class MainActivity extends AppCompatActivity {
         final EditText editText1 = (EditText)findViewById(R.id.text_1);
         final EditText editText2 = (EditText)findViewById(R.id.text_2);
         final EditText editText3 = (EditText)findViewById(R.id.text_3);
+        final EditText editText4 = (EditText)findViewById(R.id.text_4);
+        final EditText editText5 = (EditText)findViewById(R.id.text_5);
+        final EditText editText6 = (EditText)findViewById(R.id.text_6);
+        final EditText editText7 = (EditText)findViewById(R.id.text_7);
+        final EditText editText8 = (EditText)findViewById(R.id.text_8);
+        final EditText editText9 = (EditText)findViewById(R.id.text_9);
+        final EditText editText10 = (EditText)findViewById(R.id.text_10);
+        final EditText editText11 = (EditText)findViewById(R.id.text_11);
         final TextView result = (TextView) findViewById(R.id.result_id);
 
         saveButton.setOnClickListener(
             new View.OnClickListener() {
                 public void onClick(View view) {
                     String name = editText1.getText().toString();
-                    Float moduleYoung = Float.valueOf(editText2.getText().toString());
-                    Float moduleCisaillement = Float.valueOf(editText3.getText().toString());
+                    Float moduleCisaillementMinimal= Float.valueOf(editText2.getText().toString());
+                    Float moduleCisaillementMaximal = Float.valueOf(editText3.getText().toString());
+                    Float moduleYoungMinimal = Float.valueOf(editText4.getText().toString());
+                    Float moduleYoungMaximal = Float.valueOf(editText5.getText().toString());
+                    Float moduleCompressibiliteMinimal = Float.valueOf(editText6.getText().toString());
+                    Float moduleCompressibiliteMaximal = Float.valueOf(editText7.getText().toString());
+                    Float coefficientPoissonMinimal = Float.valueOf(editText8.getText().toString());
+                    Float coefficientPoissonMaximal = Float.valueOf(editText9.getText().toString());
+                    Float limiteElastiqueMinimal= Float.valueOf(editText10.getText().toString());
+                    Float limiteElastiqueMaximal= Float.valueOf(editText11.getText().toString());
 
-                    mutation(name, moduleYoung, moduleCisaillement);
+                    mutation(name, moduleCisaillementMinimal, moduleCisaillementMaximal, moduleYoungMinimal, moduleYoungMaximal, moduleCompressibiliteMinimal, moduleCompressibiliteMaximal, coefficientPoissonMinimal,  coefficientPoissonMaximal, limiteElastiqueMinimal,  limiteElastiqueMaximal );
 
                     result.setText("Created");
                 }
@@ -55,12 +71,20 @@ public class MainActivity extends AppCompatActivity {
         );
     }
 
-    public void mutation(String name, Float moduleYoung, Float moduleCisaillement)
+    public void mutation(String name, Float moduleCisaillementMinimal , Float moduleCisaillementMaximal, Float moduleYoungMinimal, Float moduleYoungMaximal , Float moduleCompressibiliteMinimal, Float moduleCompressibiliteMaximal, Float coefficientPoissonMinimal, Float coefficientPoissonMaximal, Float  limiteElastiqueMinimal, Float limiteElastiqueMaximal )
     {
         CreateProprietesMecaniquesInput createProprietesMecaniquesInput = CreateProprietesMecaniquesInput.builder()
                 .name(name)
-                .moduleYoung(moduleYoung)
-                .moduleCisaillement(moduleCisaillement)
+                .moduleCisaillementMinimal(moduleCisaillementMinimal)
+                .moduleCisaillementMaximal(moduleCisaillementMaximal)
+                .moduleYoungMinimal(moduleYoungMinimal)
+                .moduleYoungMaximal(moduleYoungMaximal)
+                .moduleCompressibiliteMinimal(moduleCompressibiliteMinimal)
+                .moduleCompressibiliteMaximal(moduleCompressibiliteMaximal)
+                .coefficientPoissonMinimal(coefficientPoissonMinimal)
+                .coefficientPoissonMaximal(coefficientPoissonMaximal)
+                .limiteElastiqueMinimal(limiteElastiqueMinimal)
+                .limiteElastiqueMaximal(limiteElastiqueMaximal)
                 .build();
 
         mAWSAppSyncClient.mutate(CreateProprietesMecaniquesMutation.builder().input(createProprietesMecaniquesInput).build())
