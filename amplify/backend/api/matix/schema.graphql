@@ -1,0 +1,27 @@
+type ProprietesMecaniques @model {
+  name: ID!
+  moduleCisaillementMinimal: Float!
+  moduleCisaillementMaximal: Float!
+  moduleYoungMinimal: Float!
+  moduleYoungMaximal: Float!
+  moduleCompressibiliteMinimal: Float!
+  moduleCompressibiliteMaximal: Float!
+  coefficientPoissonMinimal: Float!
+  coefficientPoissonMaximal: Float!
+  limiteElastiqueMinimal: Float!
+  limiteElastiqueMaximal: Float!
+}
+
+input ProprietesMecaniquesInput {
+  name: String!
+  moduleCisaillementMinimal: Float!
+  moduleCisaillementMaximal: Float!
+  moduleYoungMinimal: Float!
+  moduleYoungMaximal: Float!
+  moduleCompressibiliteMinimal: Float!
+  moduleCompressibiliteMaximal: Float!
+  coefficientPoissonMinimal: Float!
+  coefficientPoissonMaximal: Float!
+  limiteElastiqueMinimal: Float!
+  limiteElastiqueMaximal: Float!
+}

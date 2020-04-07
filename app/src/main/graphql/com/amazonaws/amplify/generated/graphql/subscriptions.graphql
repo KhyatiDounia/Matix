@@ -2,21 +2,45 @@
 subscription OnCreateProprietesMecaniques {
   onCreateProprietesMecaniques {
     name
-    moduleYoung
-    moduleCisaillement
+    moduleCisaillementMinimal
+    moduleCisaillementMaximal
+    moduleYoungMinimal
+    moduleYoungMaximal
+    moduleCompressibiliteMinimal
+    moduleCompressibiliteMaximal
+    coefficientPoissonMinimal
+    coefficientPoissonMaximal
+    limiteElastiqueMinimal
+    limiteElastiqueMaximal
   }
 }
 subscription OnUpdateProprietesMecaniques {
   onUpdateProprietesMecaniques {
     name
-    moduleYoung
-    moduleCisaillement
+    moduleCisaillementMinimal
+    moduleCisaillementMaximal
+    moduleYoungMinimal
+    moduleYoungMaximal
+    moduleCompressibiliteMinimal
+    moduleCompressibiliteMaximal
+    coefficientPoissonMinimal
+    coefficientPoissonMaximal
+    limiteElastiqueMinimal
+    limiteElastiqueMaximal
   }
 }
 subscription OnDeleteProprietesMecaniques {
   onDeleteProprietesMecaniques {
     name
-    moduleYoung
-    moduleCisaillement
+    moduleCisaillementMinimal
+    moduleCisaillementMaximal
+    moduleYoungMinimal
+    moduleYoungMaximal
+    moduleCompressibiliteMinimal
+    moduleCompressibiliteMaximal
+    coefficientPoissonMinimal
+    coefficientPoissonMaximal
+    limiteElastiqueMinimal
+    limiteElastiqueMaximal
   }
 }

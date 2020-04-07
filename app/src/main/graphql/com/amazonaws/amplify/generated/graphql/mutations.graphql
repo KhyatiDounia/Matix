@@ -5,8 +5,16 @@ mutation CreateProprietesMecaniques(
 ) {
   createProprietesMecaniques(input: $input, condition: $condition) {
     name
-    moduleYoung
-    moduleCisaillement
+    moduleCisaillementMinimal
+    moduleCisaillementMaximal
+    moduleYoungMinimal
+    moduleYoungMaximal
+    moduleCompressibiliteMinimal
+    moduleCompressibiliteMaximal
+    coefficientPoissonMinimal
+    coefficientPoissonMaximal
+    limiteElastiqueMinimal
+    limiteElastiqueMaximal
   }
 }
 mutation UpdateProprietesMecaniques(
@@ -15,8 +23,16 @@ mutation UpdateProprietesMecaniques(
 ) {
   updateProprietesMecaniques(input: $input, condition: $condition) {
     name
-    moduleYoung
-    moduleCisaillement
+    moduleCisaillementMinimal
+    moduleCisaillementMaximal
+    moduleYoungMinimal
+    moduleYoungMaximal
+    moduleCompressibiliteMinimal
+    moduleCompressibiliteMaximal
+    coefficientPoissonMinimal
+    coefficientPoissonMaximal
+    limiteElastiqueMinimal
+    limiteElastiqueMaximal
   }
 }
 mutation DeleteProprietesMecaniques(
@@ -25,7 +41,15 @@ mutation DeleteProprietesMecaniques(
 ) {
   deleteProprietesMecaniques(input: $input, condition: $condition) {
     name
-    moduleYoung
-    moduleCisaillement
+    moduleCisaillementMinimal
+    moduleCisaillementMaximal
+    moduleYoungMinimal
+    moduleYoungMaximal
+    moduleCompressibiliteMinimal
+    moduleCompressibiliteMaximal
+    coefficientPoissonMinimal
+    coefficientPoissonMaximal
+    limiteElastiqueMinimal
+    limiteElastiqueMaximal
   }
 }

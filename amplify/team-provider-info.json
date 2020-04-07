@@ -1,15 +1,15 @@
 {
     "dev": {
         "awscloudformation": {
-            "AuthRoleName": "amplify-kalidouniaproject-dev-04653-authRole",
-            "UnauthRoleArn": "arn:aws:iam::781780100447:role/amplify-kalidouniaproject-dev-04653-unauthRole",
-            "AuthRoleArn": "arn:aws:iam::781780100447:role/amplify-kalidouniaproject-dev-04653-authRole",
+            "AuthRoleName": "amplify-matix-dev-01515-authRole",
+            "UnauthRoleArn": "arn:aws:iam::781780100447:role/amplify-matix-dev-01515-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::781780100447:role/amplify-matix-dev-01515-authRole",
             "Region": "eu-central-1",
-            "DeploymentBucketName": "amplify-kalidouniaproject-dev-04653-deployment",
-            "UnauthRoleName": "amplify-kalidouniaproject-dev-04653-unauthRole",
-            "StackName": "amplify-kalidouniaproject-dev-04653",
-            "StackId": "arn:aws:cloudformation:eu-central-1:781780100447:stack/amplify-kalidouniaproject-dev-04653/40500a10-7085-11ea-a271-02b8022d5b40",
-            "AmplifyAppId": "d3tq7wqi595hpl"
+            "DeploymentBucketName": "amplify-matix-dev-01515-deployment",
+            "UnauthRoleName": "amplify-matix-dev-01515-unauthRole",
+            "StackName": "amplify-matix-dev-01515",
+            "StackId": "arn:aws:cloudformation:eu-central-1:781780100447:stack/amplify-matix-dev-01515/42ed1e70-791d-11ea-93cc-064a8d32fc9e",
+            "AmplifyAppId": "d14wlcfatl44gv"
         }
     }
 }

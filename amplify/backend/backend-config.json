@@ -1,6 +1,6 @@
 {
 	"api": {
-		"kalidouniaproject": {
+		"matix": {
 			"service": "AppSync",
 			"providerPlugin": "awscloudformation",
 			"output": {

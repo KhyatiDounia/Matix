@@ -63,7 +63,7 @@ public class MainActivity extends AppCompatActivity {
                     Float limiteElastiqueMinimal= Float.valueOf(editText10.getText().toString());
                     Float limiteElastiqueMaximal= Float.valueOf(editText11.getText().toString());
 
-                    mutation(name, moduleCisaillementMinimal, moduleCisaillementMaximal, moduleYoungMinimal, moduleYoungMaximal, moduleCompressibiliteMinimal, moduleCompressibiliteMaximal, coefficientPoissonMinimal,  coefficientPoissonMaximal, limiteElastiqueMinimal,  limiteElastiqueMaximal );
+                    mutation(name, moduleCisaillementMinimal, moduleCisaillementMaximal, moduleYoungMinimal, moduleYoungMaximal, moduleCompressibiliteMinimal, moduleCompressibiliteMaximal, coefficientPoissonMinimal, coefficientPoissonMaximal, limiteElastiqueMinimal, limiteElastiqueMaximal);
 
                     result.setText("Created");
                 }

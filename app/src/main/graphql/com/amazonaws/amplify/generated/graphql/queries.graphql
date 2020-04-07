@@ -2,8 +2,16 @@
 query GetProprietesMecaniques($id: ID!) {
   getProprietesMecaniques(id: $id) {
     name
-    moduleYoung
-    moduleCisaillement
+    moduleCisaillementMinimal
+    moduleCisaillementMaximal
+    moduleYoungMinimal
+    moduleYoungMaximal
+    moduleCompressibiliteMinimal
+    moduleCompressibiliteMaximal
+    coefficientPoissonMinimal
+    coefficientPoissonMaximal
+    limiteElastiqueMinimal
+    limiteElastiqueMaximal
   }
 }
 query ListProprietesMecaniquess(
@@ -18,8 +26,16 @@ query ListProprietesMecaniquess(
   ) {
     items {
       name
-      moduleYoung
-      moduleCisaillement
+      moduleCisaillementMinimal
+      moduleCisaillementMaximal
+      moduleYoungMinimal
+      moduleYoungMaximal
+      moduleCompressibiliteMinimal
+      moduleCompressibiliteMaximal
+      coefficientPoissonMinimal
+      coefficientPoissonMaximal
+      limiteElastiqueMinimal
+      limiteElastiqueMaximal
     }
     nextToken
   }
