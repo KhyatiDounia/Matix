@@ -31,8 +31,8 @@
 
     <TextView
         android:id="@+id/field_1"
-        android:layout_width="70dp"
-        android:layout_height="28dp"
+        android:layout_width="63dp"
+        android:layout_height="23dp"
         android:text="name"
         app:layout_constraintBottom_toTopOf="@+id/text_1"
         app:layout_constraintEnd_toEndOf="parent"
@@ -70,12 +70,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="m.cisaillement maximal"
-        app:layout_constraintBottom_toTopOf="@+id/text_3"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.885"
+        app:layout_constraintHorizontal_bias="0.869"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.896" />
+        app:layout_constraintVertical_bias="0.182" />
 
     <EditText
         android:id="@+id/text_3"
@@ -153,7 +153,7 @@
         android:layout_height="40dp"
         android:ems="10"
         android:hint="Enter a number"
-        android:inputType="number"
+        android:inputType="numberDecimal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.857"
@@ -195,7 +195,7 @@
         android:layout_height="40dp"
         android:ems="10"
         android:hint="Enter a number"
-        android:inputType="number"
+        android:inputType="numberDecimal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.145"
@@ -233,14 +233,13 @@
         android:id="@+id/field_5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
         android:text="m.young maximal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.633"
-        app:layout_constraintStart_toEndOf="@+id/field_4"
-        app:layout_constraintTop_toBottomOf="@+id/text_3"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintHorizontal_bias="0.808"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.325" />
 
     <TextView
         android:id="@+id/field_6"
@@ -285,8 +284,8 @@
         android:text="coeff poisson maximal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.612"
-        app:layout_constraintStart_toEndOf="@+id/field_8"
+        app:layout_constraintHorizontal_bias="0.872"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.591" />
 
