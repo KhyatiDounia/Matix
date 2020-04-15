@@ -21,7 +21,8 @@ import javax.annotation.Nonnull;
 
 import type.CreateProprietesMecaniquesInput;
 
-public class MainActivity extends AppCompatActivity {
+public class AdminActivity extends AppCompatActivity
+{
     private AWSAppSyncClient mAWSAppSyncClient;
 
     @Override
@@ -100,25 +101,6 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public void onFailure(@Nonnull ApolloException e) {
             Log.e("Error", e.toString());
-        }
-    };
-
-    public void query(){
-        mAWSAppSyncClient.query(ListProprietesMecaniquessQuery.builder().build())
-                .responseFetcher(AppSyncResponseFetchers.CACHE_AND_NETWORK)
-                .enqueue(proprieteMecaniquesCallback);
-    }
-
-    private GraphQLCall.Callback<ListProprietesMecaniquessQuery.Data> proprieteMecaniquesCallback = new GraphQLCall.Callback<ListProprietesMecaniquessQuery.Data>() {
-        @Override
-        public void onResponse(@Nonnull Response<ListProprietesMecaniquessQuery.Data> response) {
-            assert response.data() != null;
-            Log.i("Results", response.data().listProprietesMecaniquess().items().toString());
-        }
-
-        @Override
-        public void onFailure(@Nonnull ApolloException e) {
-            Log.e("ERROR", e.toString());
         }
     };
 }
